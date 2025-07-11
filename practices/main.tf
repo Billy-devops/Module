@@ -12,3 +12,12 @@ resource "azurerm_storage_account" "sa011" {
     account_replication_type = "LRS"
 
 }
+resource "azurerm_storage_account" "sa012" {
+    depends_on = [azurerm_resource_group.rg011]
+    name                     = "mysgstorage"
+    resource_group_name      =  "final-rg"
+    location                 = "westus"
+    account_tier             = "Standard"
+    account_replication_type = "LRS"
+
+}
