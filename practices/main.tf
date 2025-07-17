@@ -3,6 +3,12 @@ resource "azurerm_resource_group" "rg011" {
     location = "westus"
 }
 
+resource "azurerm_resource_group" "rg011" {
+    name = "final-rg22"
+    location = "westus"
+}
+
+
 
 resource "azurerm_storage_account" "sa011" {
     depends_on = [azurerm_resource_group.rg011]
