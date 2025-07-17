@@ -3,6 +3,11 @@ resource "azurerm_resource_group" "rg011" {
     location = "westus"
 }
 
+resource "azurerm_resource_group" "rg012" {
+    name = "final-rg011"
+    location = "Central India"
+}
+
 resource "azurerm_storage_account" "sa011" {
     depends_on = [azurerm_resource_group.rg011]
     name                     = "diffrentstorage"
