@@ -5,7 +5,7 @@ resource "azurerm_resource_group" "rg011" {
 
 resource "azurerm_resource_group" "rg012" {
     name = "final-rg011"
-    location = "westus"
+    location = "Central India"
 }
 
 resource "azurerm_storage_account" "sa011" {
