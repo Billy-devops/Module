@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "rg011" {
 }
 
 resource "azurerm_resource_group" "rg012" {
-    name = "final-rg011"
+    name = "final-rg"
     location = "Central India"
 }
 
