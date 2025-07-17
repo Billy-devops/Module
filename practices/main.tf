@@ -3,6 +3,7 @@ resource "azurerm_resource_group" "rg011" {
     location = "westus"
 }
 
+
 resource "azurerm_resource_group" "rg012" {
     name = "final-rg"
     location = "Central India"
